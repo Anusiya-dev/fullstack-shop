@@ -19,12 +19,7 @@ services:
           type: web
           name: flora-api
           envVarKey: RENDER_EXTERNAL_HOSTNAME
-      - key: FRONTEND_HOSTNAME
-        fromService:
-          type: web
-          name: flora-storefront
-          envVarKey: RENDER_EXTERNAL_HOSTNAME
-
+      - key: CORS_ALLOWED_ORIGINS`r`n        value: https://flora-storefront.onrender.com`r`n
   - type: web
     name: flora-storefront
     runtime: static
