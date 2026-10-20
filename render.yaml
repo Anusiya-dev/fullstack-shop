@@ -15,10 +15,7 @@ services:
       - key: DEBUG
         value: "False"
       - key: ALLOWED_HOSTS
-        fromService:
-          type: web
-          name: flora-api
-          envVarKey: RENDER_EXTERNAL_HOSTNAME
+        value: localhost,127.0.0.1
       - key: CORS_ALLOWED_ORIGINS
         value: https://flora-storefront.onrender.com
 
